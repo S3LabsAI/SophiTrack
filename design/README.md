@@ -27,7 +27,7 @@ Live canvas (editable): https://claude.ai/artifact/6R9uhNHeXC4UUxqqmoBiu8
 Font in mocks: DM Sans (stand-in; iOS system font is the fallback).
 
 ## Out of date since 11/9/2026
-On 11/9/2026 feeding became formula only and the app was simplified. The mockups and canvas were not redrawn. `SophiTrack-UI-Brief.md` is the build reference; where it and a mockup differ, the brief wins. No longer applies:
+On 11/9/2026 feeding became formula only and the app was simplified. The mockups and canvas were not redrawn; `Mockup-Redesign-Brief.md` in this folder is the brief for redrawing them (v3). `SophiTrack-UI-Brief.md` is the build reference; where it and a mockup differ, the brief wins. No longer applies:
 - **Pump screens** (frame 13) and the pumping card, pump rows and Pump filter chip wherever they appear.
 - **Breast-milk split** on Today and on the Feed sheet (mL / % toggle, split bar, formula line), and the % entry frame (`10-FeedPct`). A feed is now one amount in mL; Today shows "Formula today · 330 mL".
 - **Five-tab bar.** The tab bar is Today, +, Timeline. The + menu has two large tiles (Feed, Diaper) and a small row with Weight and Note.

@@ -81,7 +81,7 @@ Measurements are logged **from pediatrician visits only** for now (no home scale
 
 **Birth measurements:** 6 lb 9 oz (2,977 g), 19 in.
 
-**Calculated:** % change from birth weight (shown on Today, e.g. "6 lb 4 oz on Nov 6 · 5 oz under birth weight (5%)"), whether she's regained birth weight (target: by Day 14, 11/12), growth curve vs. reference charts (Phase 3).
+**Calculated:** % change from birth weight (shown on Today, e.g. "6 lb 4 oz on Nov 1 · 5 oz under birth weight (5%)"), whether she's regained birth weight (target: by Day 14, 11/12), growth curve vs. reference charts (Phase 3).
 
 ### 2.5 Care & Health
 - **Bath:** date logged; next bath due (default every 3 days, per the note on the hospital sheet)

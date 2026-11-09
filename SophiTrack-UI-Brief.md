@@ -142,7 +142,7 @@ MVP screens: 4.1 to 4.5, 4.7, 4.12 and 4.13. Screens marked **Phase 2** are not 
 
 **Last diaper:** "Last diaper 3:45 PM · wet and dirty · Tom". Names in full on Today; initials in the Timeline.
 
-**Weight line (shown once a weight has been logged):** "6 lb 4 oz on Nov 6 · 5 oz under birth weight (5%)", then "Back to birth weight" once regained. "Goal: back to birth weight by Day 14 (Nov 12)" shows only until then. Birth weight is 6 lb 9 oz (2,977 g).
+**Weight line (shown once a weight has been logged):** "6 lb 4 oz on Nov 1 · 5 oz under birth weight (5%)", then "Back to birth weight" once regained. "Goal: back to birth weight by Day 14 (Nov 12)" shows only until then. Birth weight is 6 lb 9 oz (2,977 g).
 
 **Not on Today:** tip banner, partner-activity banner (Today updates live on its own), quick-log row, spinner, pull-to-refresh, "last updated". Today always draws from the copy on the phone and never waits on the network.
 
