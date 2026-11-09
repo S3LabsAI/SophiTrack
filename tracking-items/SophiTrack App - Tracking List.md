@@ -1,3 +1,6 @@
+> **Note, 11/9/2026:** feeding is now formula only. Heidi is no longer pumping or breastfeeding.
+> Section 3 (Pumping) and the "Type of milk" line in section 2 are historical and are not tracked in the app.
+
 # SophiTrack App - Tracking List
 
 ## 1. Diapers (log for each 24-hour period)

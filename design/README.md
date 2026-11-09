@@ -22,6 +22,16 @@ Live canvas (editable): https://claude.ai/artifact/6R9uhNHeXC4UUxqqmoBiu8
 | On track | #3E7D5A + check icon | #7FC89A |
 | Watch | #9A6A12 + eye icon | #E3B35C |
 | Below minimum | #A8532F + alert icon | #F0997A |
-| Breast milk / formula (charts) | #3F7F94 / #C9A071 | #7FB8CB / #D9B27E |
+| Breast milk / formula (charts; out of date, see below) | #3F7F94 / #C9A071 | #7FB8CB / #D9B27E |
 
 Font in mocks: DM Sans (stand-in; iOS system font is the fallback).
+
+## Out of date since 11/9/2026
+On 11/9/2026 feeding became formula only and the app was simplified. The mockups and canvas were not redrawn. `SophiTrack-UI-Brief.md` is the build reference; where it and a mockup differ, the brief wins. No longer applies:
+- **Pump screens** (frame 13) and the pumping card, pump rows and Pump filter chip wherever they appear.
+- **Breast-milk split** on Today and on the Feed sheet (mL / % toggle, split bar, formula line), and the % entry frame (`10-FeedPct`). A feed is now one amount in mL; Today shows "Formula today · 330 mL".
+- **Five-tab bar.** The tab bar is Today, +, Timeline. The + menu has two large tiles (Feed, Diaper) and a small row with Weight and Note.
+- **Tip banner and partner-activity banner** on Today.
+- **Swipe actions** on Timeline rows. Tap a row to edit; Delete is a labelled button in the edit sheet.
+- **Breast milk / formula chart colors** in the palette above, and the pump and % breast milk charts in Trends.
+- Smaller wording changes ("On pace", "window", "Offline · will sync", the 5-second toast) are listed in the brief's states table and word list.
