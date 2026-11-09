@@ -24,7 +24,7 @@ Linting is **oxlint** (the Vite scaffold default), not ESLint. Prettier ignores 
 ## Infrastructure
 
 - **GitHub:** public repo `S3LabsAI/SophiTrack` (the gh account formerly named TomsTools11), branch `main`.
-- **Vercel:** team "S3 Projects" (`team_S3B9QxHnMuFU2aNBw3Me9BMs`), project `sophitrack`, imported from the GitHub repo so every push to `main` deploys to production. The Vercel MCP connection cannot create projects in this team (403); project-level changes may need the dashboard. `vercel.json` rewrites extensionless paths to `index.html` (SPA routing) and sets `noindex`.
+- **Vercel:** team "S3 Projects" (`team_S3B9QxHnMuFU2aNBw3Me9BMs`), project `sophitrack`, imported from the GitHub repo so every push to `main` deploys to production at **https://sophitrack.vercel.app**. Env vars are set for Production and Preview; Vite inlines them at build time, so changing them needs a redeploy. The Vercel MCP connection cannot create projects in this team (403); project-level changes may need the dashboard. `vercel.json` rewrites extensionless paths to `index.html` (SPA routing) and sets `noindex`.
 - **Supabase:** org TomsTools, project `sophitrack`, ref `khcbelbmngvctesbsuzf`, region us-east-2. Client env vars `VITE_SUPABASE_URL` and `VITE_SUPABASE_PUBLISHABLE_KEY` live in `.env.local` (git-ignored; template in `.env.example`) and in Vercel project env. Use the `sb_publishable_…` key, not the legacy anon JWT.
 - **Migrations:** SQL files in `supabase/migrations/`, applied to the hosted project with the Supabase MCP `apply_migration` tool (the Supabase CLI is installed as a dev dependency, `npx supabase`, but not logged in or linked). Never edit an applied migration; add a new one.
 
