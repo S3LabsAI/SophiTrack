@@ -1,0 +1,331 @@
+{
+ "v": 3,
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-03T02:50:00Z"
+ },
+ "title": "SophiTrack Mockups",
+ "launch": {
+  "view": "canvas"
+ },
+ "pages": [],
+ "boards": {
+  "Main.dc.html": {
+   "x": 0,
+   "y": 0,
+   "w": 1240,
+   "h": 760,
+   "title": "0 \u00b7 Logo & icon sheet"
+  },
+  "Avatars.dc.html": {
+   "x": 1320,
+   "y": 0,
+   "w": 1240,
+   "h": 640,
+   "title": "0 \u00b7 Sophie avatar options"
+  },
+  "TodayLight.dc.html": {
+   "x": 0,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "1 \u00b7 Today (light)"
+  },
+  "TodayDark.dc.html": {
+   "x": 473,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "1 \u00b7 Today (dark)"
+  },
+  "QuickLog.dc.html": {
+   "x": 946,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "2 \u00b7 Quick-log menu"
+  },
+  "TodayOverdue.dc.html": {
+   "x": 1419,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "13 \u00b7 State: feed overdue"
+  },
+  "TodayBelowMin.dc.html": {
+   "x": 1892,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "13 \u00b7 State: below minimum"
+  },
+  "TodayPartner.dc.html": {
+   "x": 2365,
+   "y": 1160,
+   "w": 393,
+   "h": 852,
+   "title": "13 \u00b7 State: partner activity + offline"
+  },
+  "FeedML.dc.html": {
+   "x": 0,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "3 \u00b7 Log Feed, mL (light)"
+  },
+  "FeedMLDark.dc.html": {
+   "x": 473,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "3 \u00b7 Log Feed, mL (dark)"
+  },
+  "FeedPct.dc.html": {
+   "x": 946,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "3 \u00b7 Log Feed, % entry"
+  },
+  "DiaperDefault.dc.html": {
+   "x": 1419,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "4 \u00b7 Log Diaper"
+  },
+  "DiaperUnusual.dc.html": {
+   "x": 1892,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "4 \u00b7 Log Diaper, unusual color"
+  },
+  "Pump.dc.html": {
+   "x": 2365,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "5 \u00b7 Log Pump"
+  },
+  "Sleep.dc.html": {
+   "x": 2838,
+   "y": 2355,
+   "w": 393,
+   "h": 852,
+   "title": "6 \u00b7 Sleep timer"
+  },
+  "Timeline.dc.html": {
+   "x": 0,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "7 \u00b7 Timeline"
+  },
+  "TimelineTimeChange.dc.html": {
+   "x": 473,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "7 \u00b7 Timeline, 25-hr day"
+  },
+  "TimelineEmpty.dc.html": {
+   "x": 946,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "13 \u00b7 State: empty"
+  },
+  "DaySummary.dc.html": {
+   "x": 1419,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "8 \u00b7 Day Summary"
+  },
+  "Trends.dc.html": {
+   "x": 1892,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "9 \u00b7 Trends"
+  },
+  "Care.dc.html": {
+   "x": 2365,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "10 \u00b7 Care"
+  },
+  "Settings.dc.html": {
+   "x": 2838,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "12 \u00b7 Settings & Profile"
+  },
+  "LockScreen.dc.html": {
+   "x": 3311,
+   "y": 3550,
+   "w": 393,
+   "h": 852,
+   "title": "11 \u00b7 Lock-screen notification"
+  },
+  "DesktopToday.dc.html": {
+   "x": 0,
+   "y": 4745,
+   "w": 1280,
+   "h": 860,
+   "title": "Desktop \u00b7 Today"
+  },
+  "DesktopTimeline.dc.html": {
+   "x": 1360,
+   "y": 4745,
+   "w": 1280,
+   "h": 860,
+   "title": "Desktop \u00b7 Timeline + Log Feed panel"
+  },
+  "DesktopTrends.dc.html": {
+   "x": 2720,
+   "y": 4745,
+   "w": 1280,
+   "h": 860,
+   "title": "Desktop \u00b7 Trends"
+  },
+  "PadPortraitLight.dc.html": {
+   "x": 0,
+   "y": 5948,
+   "w": 820,
+   "h": 1180,
+   "title": "iPad portrait \u00b7 Today (light)"
+  },
+  "PadPortraitDark.dc.html": {
+   "x": 900,
+   "y": 5948,
+   "w": 820,
+   "h": 1180,
+   "title": "iPad portrait \u00b7 Today (dark, night display)"
+  },
+  "PadLandLight.dc.html": {
+   "x": 1800,
+   "y": 5948,
+   "w": 1180,
+   "h": 820,
+   "title": "iPad landscape \u00b7 Today (light)"
+  },
+  "PadLandDark.dc.html": {
+   "x": 3060,
+   "y": 5948,
+   "w": 1180,
+   "h": 820,
+   "title": "iPad landscape \u00b7 Today (dark, night display)"
+  },
+  "PadLandTimelineFeed.dc.html": {
+   "x": 4320,
+   "y": 5948,
+   "w": 1180,
+   "h": 820,
+   "title": "iPad landscape \u00b7 Timeline + Log Feed panel"
+  },
+  "PadLandNight.dc.html": {
+   "x": 5580,
+   "y": 5948,
+   "w": 1180,
+   "h": 820,
+   "title": "iPad landscape \u00b7 Night display, auto-dimmed at 10 PM"
+  }
+ },
+ "order": [
+  "Main.dc.html",
+  "Avatars.dc.html",
+  "TodayLight.dc.html",
+  "TodayDark.dc.html",
+  "QuickLog.dc.html",
+  "TodayOverdue.dc.html",
+  "TodayBelowMin.dc.html",
+  "TodayPartner.dc.html",
+  "FeedML.dc.html",
+  "FeedMLDark.dc.html",
+  "FeedPct.dc.html",
+  "DiaperDefault.dc.html",
+  "DiaperUnusual.dc.html",
+  "Pump.dc.html",
+  "Sleep.dc.html",
+  "Timeline.dc.html",
+  "TimelineTimeChange.dc.html",
+  "TimelineEmpty.dc.html",
+  "DaySummary.dc.html",
+  "Trends.dc.html",
+  "Care.dc.html",
+  "Settings.dc.html",
+  "LockScreen.dc.html",
+  "DesktopToday.dc.html",
+  "DesktopTimeline.dc.html",
+  "DesktopTrends.dc.html",
+  "PadPortraitLight.dc.html",
+  "PadPortraitDark.dc.html",
+  "PadLandLight.dc.html",
+  "PadLandDark.dc.html",
+  "PadLandTimelineFeed.dc.html",
+  "PadLandNight.dc.html"
+ ],
+ "notes": {
+  "t0": {
+   "x": 0,
+   "y": -260,
+   "text": "Brand: logo lockups, home-screen icon, splash & Sophie's avatar options",
+   "kind": "title1",
+   "maxW": 2560
+  },
+  "t1": {
+   "x": 0,
+   "y": 900,
+   "text": "Today (light & dark), quick-log menu & Today states",
+   "kind": "title1",
+   "maxW": 2760
+  },
+  "t2": {
+   "x": 0,
+   "y": 2095,
+   "text": "Logging sheets: Feed, Diaper, Pump & Sleep",
+   "kind": "title1",
+   "maxW": 3230
+  },
+  "t3": {
+   "x": 0,
+   "y": 3290,
+   "text": "Timeline, Day Summary, Trends, Care, Settings & lock screen",
+   "kind": "title1",
+   "maxW": 3700
+  },
+  "t4": {
+   "x": 0,
+   "y": 4485,
+   "text": "Desktop: same app, wider layout (sidebar nav, cards in columns, forms as side panels)",
+   "kind": "title1",
+   "maxW": 4000
+  },
+  "s1": {
+   "x": 2660,
+   "y": 0,
+   "w": 300,
+   "text": "Palette in these mocks (not final): teal #3A7489 for primary buttons, brand teal #5D94A6 for accents, coral #D97757 only for highlights. Status: On track (green + check), Watch (amber + eye), Below minimum (coral + alert). Font: DM Sans as a stand-in.",
+   "fill": "teal"
+  },
+  "t5": {
+   "x": 0,
+   "y": 5688,
+   "text": "iPad as the nursery display: portrait & landscape, light & night mode",
+   "kind": "title1",
+   "maxW": 6760
+  },
+  "s2": {
+   "x": 6840,
+   "y": 5948,
+   "w": 300,
+   "text": "Nursery display notes: countdown to the next window is the hero; tap targets 64 pt+; dark mode is the night default; clock in the header since the iPad sits on a stand. Auto-dim: screen drops to ~55% at 10:00 PM, brightens at 6:00 AM, any tap wakes it to full for 60 s. Set in Settings \u203a Night display. Frames are 10th-gen iPad points.",
+   "fill": "teal"
+  }
+ },
+ "designSystems": []
+}

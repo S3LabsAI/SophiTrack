@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Today, light mode</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr"><div><h1>Care</h1><p class="sub">Sophie's health</p></div></header>
+    <section class="card" style="gap: 6px;">
+      <div class="between"><h2>Growth</h2><span class="status st-watch"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>Watch</span></div>
+      <div class="between">
+        <div><div class="big">3,215 g <span class="small" style="font-weight: 500;">· −6% from birth</span></div><div class="small">Visit Oct 31 · birth weight 3,420 g</div><div class="small" style="margin-top: 4px; color: var(--teal-ink); font-weight: 600;">Goal: back to 3,420 g by Day 14 (Nov 12)</div></div>
+        <svg viewBox="0 0 120 50" width="120" height="50" role="img" aria-label="Weight at visits: 3420, 3290, 3215 grams"><line x1="4" y1="8" x2="116" y2="8" stroke="var(--line)" stroke-dasharray="3 3"/><polyline points="10,8 60,30 110,42" fill="none" stroke="var(--bm)" stroke-width="2"/><circle cx="10" cy="8" r="4" fill="var(--bm)"/><circle cx="60" cy="30" r="4" fill="var(--bm)"/><circle cx="110" cy="42" r="4" fill="var(--coral)"/></svg>
+      </div>
+    </section>
+    <section class="card" style="gap: 6px;">
+      <div class="between"><h2>Appointments</h2><button class="btn btn-ghost" type="button" style="min-height: 32px; padding: 0 6px; font-size: 14px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 5v14M5 12h14"/></svg>Add</button></div>
+      <div class="row" style="gap: 10px;"><span style="width: 36px; height: 36px; border-radius: 10px; background: var(--teal-tint); color: var(--teal-ink); display: flex; align-items: center; justify-content: center;"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div><div style="font-size: 15px; font-weight: 600;">Thu, Nov 5 · 10:30 AM · Weight check</div><div class="small">Next visit · Dr. Alvarez</div></div></div>
+      
+    </section>
+    <section class="card" style="gap: 4px;">
+      <div class="between"><h2>Questions for pediatrician</h2><button class="btn btn-ghost" type="button" style="min-height: 32px; padding: 0 6px; font-size: 14px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M12 5v14M5 12h14"/></svg>Add</button></div>
+      <div class="li" style="min-height: 36px;"><span class="check"></span><span style="font-size: 15px;">Ask about nipple shields</span></div><div class="li" style="min-height: 36px;"><span class="check"></span><span style="font-size: 15px;">Is this stool color normal? (white/chalky, Nov 2)</span></div><div class="li" style="min-height: 36px;"><span class="check on"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" ><path d="M5 12l4 4 10-10"/></svg></span><span style="font-size: 15px; text-decoration: line-through; color: var(--muted);">Vitamin D dose</span></div>
+    </section>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px;">
+      <section class="card" style="gap: 4px;"><h2>Bath</h2><div style="font-size: 15px; font-weight: 600;">Last: Oct 31</div><div class="small">Next due: Nov 3</div></section>
+      <section class="card" style="gap: 4px;"><h2>Health log</h2><div style="font-size: 15px; font-weight: 600;">98.4 °F · 2:00 PM</div><div class="small">Vit D drops 9 AM · cord dry</div></section>
+    </div>
+  </div>
+  <nav class="tabbar" aria-label="Main">
+    <button class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Today</button>
+    <button class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Timeline</button>
+    <div><a href="QuickLog.dc.html" class="fab" aria-label="Log"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a><div class="fab-label">Log</div></div>
+    <button class="tab"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg>Trends</button>
+    <button class="tab active"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-4.5-9-9a4.5 4.5 0 0 1 9-3 4.5 4.5 0 0 1 9 3c-2 4.5-9 9-9 9z"/></svg>Care</button>
+  </nav>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

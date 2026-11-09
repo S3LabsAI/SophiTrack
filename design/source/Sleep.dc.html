@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Sleep timer</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone dark" style="background: #16262B;">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen" style="align-items: center; text-align: center; gap: 16px;">
+    <div class="between" style="width: 100%;">
+      <a href="TodayLight.dc.html" class="btn btn-ghost" style="text-decoration: none; padding: 0 4px; color: var(--teal);">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>Today
+      </a>
+      <span class="pill" style="background: var(--teal-tint); color: var(--teal);">Sleep</span>
+    </div>
+    <div style="flex: 1;"></div>
+    <div style="width: 180px; height: 180px; border-radius: 50%; background: var(--teal-tint); display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 14px rgba(93,148,166,.08), 0 0 0 28px rgba(93,148,166,.05);">
+      <svg width="76" height="76" viewBox="0 0 24 24" fill="none" stroke="var(--teal)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg>
+    </div>
+    <div class="lbl" style="color: var(--teal); margin-top: 8px;">Asleep</div>
+    <div style="font-size: 64px; font-weight: 700; letter-spacing: -2px; line-height: 1; font-variant-numeric: tabular-nums;">1:12:40</div>
+    <div class="small">Fell asleep 4:18 PM · Day 4</div>
+    <div style="flex: 1;"></div>
+    <button class="btn btn-full" type="button" style="background: var(--card); color: var(--text); min-height: 60px; font-size: 18px; max-width: 320px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="var(--low)" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>Stop sleep
+    </button>
+    <button class="btn btn-ghost" type="button" style="color: var(--teal);">Enter manually</button>
+    <div style="height: 24px;"></div>
+  </div>
+  <div class="homebar" style="background: #F3EEE4;"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
