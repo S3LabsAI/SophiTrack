@@ -271,12 +271,12 @@ Reference metrics beyond week 1 with sources (AAP, CDC/WHO, or the pediatrician)
 | Minimums | Stored as data with a source. Tom edits them in Supabase; there is no editor in the app |
 | Birth weight | 6 lb 9 oz (2,977 g) |
 | Birth length | 19 in (48.3 cm) |
+| GitHub repo (11/9) | Stays public (Tom's decision). Nothing personal is ever committed: no sheet photos, backfill CSVs, emails or exports, and account passwords stay long and random |
 
 **Still open**
 
 | # | Question | Why it matters |
 |---|---|---|
 | 1 | Birth head circumference | Optional; blank until known (likely on the discharge papers) |
-| 2 | GitHub repo: private or public? | It is public now. Private is recommended. Either way nothing personal is committed and passwords stay long and random |
-| 3 | Ask the pediatrician at the Day 14 visit whether the Day 6+ minimums are still right at this age | Today's status is measured against them. The hospital sheet was written for breastfed newborns in week one |
-| 4 | Pace rule: when does zero feeds turn Watch? | The decided formula gives Watch just after 3:00 AM for a minimum of 8. Rounding the pace down to whole feeds gives 6:00 AM, which is what the review described. The §5.2 tests pass either way. `status.ts` is built to the decided formula unless Tom says otherwise before M1 |
+| 2 | Ask the pediatrician at the Day 14 visit whether the Day 6+ minimums are still right at this age | Today's status is measured against them. The hospital sheet was written for breastfed newborns in week one |
+| 3 | Pace rule: when does zero feeds turn Watch? | The decided formula gives Watch just after 3:00 AM for a minimum of 8. Rounding the pace down to whole feeds gives 6:00 AM, which is what the review described. The §5.2 tests pass either way. `status.ts` is built to the decided formula unless Tom says otherwise before M1 |

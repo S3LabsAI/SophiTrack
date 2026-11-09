@@ -266,4 +266,4 @@ Every entry also stores `utc_offset` at the moment of the event (-05:00 CDT or -
 | Web address | https://sophitrack.vercel.app is permanent |
 | Reminders | All reminders go to both parents |
 
-**Still open:** whether to make the GitHub repo private again (currently public; private is recommended).
+**GitHub repo:** stays public (decided 11/9/2026). Nothing personal is committed to it.
