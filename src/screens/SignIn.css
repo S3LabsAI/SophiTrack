@@ -1,0 +1,35 @@
+.signin {
+  /* #root already adds the safe-area insets as padding. */
+  min-height: calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 0 24px 34px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.signin-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  margin: 0;
+  padding: 56px 0 28px;
+}
+.signin-brand img {
+  display: block;
+  object-fit: contain;
+}
+.signin form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.signin .btn {
+  margin-top: 8px;
+}
+.signin-hint {
+  margin-top: auto;
+  padding-top: 24px;
+  text-align: center;
+}

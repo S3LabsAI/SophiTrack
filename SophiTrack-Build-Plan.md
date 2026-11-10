@@ -80,7 +80,7 @@ Design decisions:
 | `members` | baby_id, user_id, display_name, initial (H/T). This is what row-level security checks against |
 | `entries` | id `uuid`, baby_id, kind (enum), occurred_at `timestamptz`, utc_offset_min `smallint`, ended_at `timestamptz` null, logged_by, source (`app`/`paper`, default `app`), data `jsonb`, notes, created_at, updated_at, deleted_at |
 | `settings` | baby_id, feed_interval_min (120), feed_window_min (60) |
-| `reference_metrics` | metric, day_from, day_to, min, typical, max, note, source, source_url |
+| `reference_metrics` | baby_id, metric (`feeds` / `wets` / `dirties`), day_from, day_to (null = onward), min, typical, max, note, source, source_url |
 
 **Entry kinds (enum):** `feed`, `diaper`, `sleep`, `care`, `note`, `measurement`. The MVP writes feed, diaper, note and measurement; sleep and care are in the enum for Phase 2.
 
@@ -151,7 +151,7 @@ public/        icons and splash from design/brand/
 
 **Done when** all of these pass, and pass again with the test run's `TZ` set to a zone other than Central (§8).
 
-### 5.3 M2 · Backend (Tue 11/10)
+### 5.3 M2 · Backend (Tue 11/10) · built 11/10, waiting on Tom's three setup steps
 - **First: turn off public sign-ups** in Supabase. Leave the session time-box and inactivity timeout off, so nobody is signed out for being idle
 - Migrations: tables, kind enum, `source` column, `updated_at` trigger, row-level security. No `theme` column
 - Seed Sophie, both members and the reference metrics. Tom creates the two auth users by hand with long random passwords
@@ -160,10 +160,22 @@ public/        icons and splash from design/brand/
 
 **Done when** both parents can sign in, a third hand-made test account sees zero rows, and a sign-up attempt with the publishable key is refused.
 
+**Status 11/10.** Built and applied: the migration (`supabase/migrations/20261110000000_initial_schema.sql`), the seed (Sophie, feed timing, 14 minimum rows), the sign-in screen and the "this phone has signed in" mark. Checked on the hosted database as each role in a rolled-back test: a signed-out visitor and a signed-up stranger read zero rows and can write nothing; a parent can add their own entries, edit or soft-delete either parent's, and cannot change who logged an entry, hard-delete, or touch settings and minimums. Supabase's security advisor reports nothing.
+
+Left for Tom, in the Supabase dashboard (the app's own tools cannot do these):
+1. Authentication > Sign In / Providers: turn **Allow new users to sign up** off.
+2. Authentication > Users > Add user, twice (Tom, Heidi), each with a long random password and "Auto Confirm User" on.
+3. Tell Claude, who then runs `supabase/seed-members.sql` with the two emails from `private/accounts.md` and checks the three done-when items.
+
+How the app may write (the importer and M3 rely on this): the app can insert entries only as the signed-in parent with `source = 'app'`, and can update only `occurred_at`, `utc_offset_min`, `ended_at`, `data`, `notes` and `deleted_at`. Paper rows are loaded with SQL or the secret key, not through the app.
+
 ### 5.4 M3 · Local store and sync (Tue 11/10 to Wed 11/11)
 - Dexie table mirroring `entries`, plus an outbox of actions (create, update, delete)
 - Push: send the outbox in order; retry when the phone comes back online, when the app returns to the foreground, and with backoff
 - Pull: refetch all entries on open, on return to the foreground and on any Realtime event for this baby; replace the local copy, then re-apply the outbox
+- The pull pages. The Data API returns at most 1,000 rows per request and cuts off silently, so select entries for this baby in a fixed order (id) with an exact count, and fetch with `.range()` page by page until the rows collected equal the count. If any page fails or the totals differ, leave the local copy untouched and try again on the next trigger. Unit test with a fake client holding about 2,500 entries
+- Writes match the M2 privileges: create is an insert that ignores duplicates (the app has no update right on id, baby_id, kind, logged_by or source, so it cannot upsert); an edit always sends the whole `data` object, never part of it; delete and Undo set and clear `deleted_at`
+- The "this phone has signed in" mark (`sophitrack.signedIn`, added in M2) decides which screen opens. A missing session with the mark present is the "Tap to reconnect" state
 - Today always draws from the local copy and never waits on the network
 - One pill, "Saved on this phone", shown only while the outbox is not empty. Nothing when everything is sent, no count, no red. The save toast is identical online and offline
 - Once a phone has signed in, it always opens to Today and allows logging. A calm "Tap to reconnect" banner shows only when the server has rejected the session. A network error never signs anyone out, and a dead session never clears local data or the outbox

@@ -1,0 +1,72 @@
+/* Shared component styles, ported from design/source-v3/sophi.css. */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 56px;
+  padding: 0 20px;
+  border-radius: var(--radius-btn);
+  border: 0;
+  font: inherit;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+}
+.btn-quiet {
+  background: transparent;
+  color: var(--text);
+  min-height: var(--tap-min);
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-full {
+  width: 100%;
+}
+.btn:focus-visible,
+.input input:focus-visible {
+  outline: 3px solid var(--teal);
+  outline-offset: 2px;
+}
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: left;
+}
+.input label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.input input {
+  height: 52px;
+  width: 100%;
+  border-radius: 14px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  padding: 0 14px;
+  font: inherit;
+  /* 16px or more, so the iPhone does not zoom the page when the field is tapped. */
+  font-size: 17px;
+  color: var(--text);
+  appearance: none;
+}
+.input input[type='password'] {
+  font-family: -apple-system, 'SF Pro Text', system-ui, sans-serif;
+  letter-spacing: 3px;
+}
+
+.plain {
+  margin: 0;
+  font-size: 16px;
+  color: var(--text);
+}
+.plain.soft {
+  color: var(--text2);
+}
