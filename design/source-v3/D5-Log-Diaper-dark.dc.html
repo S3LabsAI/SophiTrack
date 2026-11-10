@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>D5 Log Diaper, dark</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone dark">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr">
+      <div>
+        <h1>Sophie</h1>
+        <p class="sub">Day 4 · Mon, Nov 2</p>
+      </div>
+      <span class="av"><img class="avatar40" src="/_blob/a1977d86296544640bcd0826003c5b13" alt="Sophie's avatar"></span>
+    </header>
+    <section class="card feed">
+      <div class="big">Last feed 1 hr 45 min ago</div>
+      <div class="line2">Next feed about 5:45 to 6:45 PM</div>
+      <span class="btn btn-primary btn-full"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg>Log feed</span>
+    </section>
+  </div>
+
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Diaper">
+    <div class="grab"></div>
+    <div class="sheet-head"><h1>Diaper</h1><a class="x" href="A2-Today-dark.dc.html" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a></div>
+    <div><button class="chip" type="button" aria-label="Time: now. Change time"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Now</button></div>
+
+    <div class="big3" role="group" aria-label="Diaper type">
+      <button type="button">Wet</button>
+      <button class="on" type="button" aria-pressed="true">Dirty</button>
+      <button type="button">Both</button>
+    </div>
+
+    <div class="field">
+      <span class="q">Poop color <span class="opt">(optional)</span></span>
+      <div class="swatches">
+        <button class="swatch" type="button"><i style="background: #D4A820;"></i>Mustard yellow</button>
+        <button class="swatch" type="button"><i style="background: #8B5A2B;"></i>Brown</button>
+        <button class="swatch" type="button"><i style="background: #B5B23A;"></i>Greenish yellow</button>
+        <button class="swatch" type="button"><i style="background: #6B6A2E;"></i>Green-brown</button>
+      </div>
+      <div class="sw-row2">
+        <div class="sw-half">
+          <span class="sw-head" aria-hidden="true"></span>
+          <div class="swatches pair">
+            <button class="swatch" type="button"><i style="background: #3E5A33;"></i>Dark green</button>
+            <button class="swatch" type="button"><i style="background: #2B2622;"></i>Black/&#8203;tarry</button>
+          </div>
+        </div>
+        <div class="sw-div"></div>
+        <div class="sw-half">
+          <span class="sw-head">Less common</span>
+          <div class="swatches pair">
+            <button class="swatch" type="button"><i style="background: #B03A2E;"></i>Red</button>
+            <button class="swatch" type="button"><i style="background: #EDE9E1;"></i>White/&#8203;chalky</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <button class="collapsed" type="button"><span>Add texture <span class="opt">(optional)</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <button class="collapsed" type="button"><span>Add a note</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+
+    <div class="sheet-save"><button class="btn btn-primary btn-full" type="button">Save</button></div>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

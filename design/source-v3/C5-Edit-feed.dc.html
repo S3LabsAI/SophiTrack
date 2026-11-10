@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C5 Log Feed, editing</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr"><h1>Timeline</h1></header>
+    <div class="filters"><span class="chip on">All</span><span class="chip">Feeds</span><span class="chip">Diapers</span></div>
+    <div class="list">
+      <div class="dayhdr"><div class="d1"><strong>Day 4 · Mon, Nov 2</strong></div><span class="tot">6 feeds · 330 mL · 3 wet · 2 dirty</span></div>
+      <div class="entry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">3:45 PM · Feed</span><span class="d">60 mL</span></span><span class="who">T</span></div>
+      <div class="entry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">3:45 PM · Diaper</span><span class="d">Wet and dirty, greenish yellow</span></span><span class="who">T</span></div>
+    </div>
+  </div>
+
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Edit feed">
+    <div class="grab"></div>
+    <div class="sheet-head"><h1>Edit feed</h1><a class="x" href="F1-Timeline.dc.html" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a></div>
+    <div class="chips">
+      <button class="chip" type="button" aria-label="Date: Mon, Nov 2. Change date">Mon, Nov 2</button>
+      <button class="chip" type="button" aria-label="Time: 3:45 PM. Change time">3:45 PM</button>
+    </div>
+
+    <div class="field">
+      <span class="q">How much was in the bottle?</span>
+      <div class="stepper">
+        <button type="button" aria-label="5 mL less">−</button>
+        <div class="val">60<small>mL</small></div>
+        <button type="button" aria-label="5 mL more">+</button>
+      </div>
+      <div class="chips five">
+        <button class="chip" type="button">30</button>
+        <button class="chip" type="button">45</button>
+        <button class="chip on" type="button" aria-pressed="true">60</button>
+        <button class="chip" type="button">75</button>
+        <button class="chip" type="button">90</button>
+      </div>
+    </div>
+
+    <button class="collapsed" type="button"><span>Left in bottle <span class="opt">(optional)</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <button class="collapsed" type="button"><span>Add a note</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+
+    <div class="sheet-save">
+      <button class="btn btn-quiet btn-full" type="button">Delete this entry</button>
+      <button class="btn btn-primary btn-full" type="button">Save</button>
+    </div>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

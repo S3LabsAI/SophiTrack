@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>F1 Timeline, light</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr"><h1>Timeline</h1></header>
+    <div class="filters" role="group" aria-label="Show">
+      <button class="chip on" type="button" aria-pressed="true">All</button>
+      <button class="chip" type="button">Feeds</button>
+      <button class="chip" type="button">Diapers</button>
+    </div>
+    <div class="list">
+      <div class="dayhdr"><div class="d1"><strong>Day 4 · Mon, Nov 2</strong></div><span class="tot">6 feeds · 330 mL · 3 wet · 2 dirty</span></div>
+      <a class="entry" href="C5-Edit-feed.dc.html"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">3:45 PM · Feed</span><span class="d">60 mL</span></span><span class="who" aria-label="Tom">T</span></a>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">3:45 PM · Diaper</span><span class="d">Wet and dirty, greenish yellow</span></span><span class="who" aria-label="Tom">T</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">12:10 PM · Diaper</span><span class="d">Wet</span></span><span class="who h" aria-label="Heidi">H</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">12:00 PM · Feed</span><span class="d">60 mL</span><span class="n">Spit up a little</span></span><span class="who h" aria-label="Heidi">H</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">9:50 AM · Feed</span><span class="d">60 mL</span></span><span class="who h" aria-label="Heidi">H</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">6:50 AM · Diaper</span><span class="d">Dirty, green-brown</span></span><span class="who" aria-label="Tom">T</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">6:45 AM · Feed</span><span class="d">55 mL</span></span><span class="who" aria-label="Tom">T</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">3:35 AM · Diaper</span><span class="d">Wet</span></span><span class="who h" aria-label="Heidi">H</span></button>
+      <button class="entry" type="button"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">3:30 AM · Feed</span><span class="d">50 mL (10 left)</span></span><span class="who h" aria-label="Heidi">H</span></button>
+    </div>
+  </div>
+
+  <nav class="tabbar" aria-label="Main">
+    <a class="tab" href="Main.dc.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>Today</a>
+    <a class="fab" href="B1-Plus-menu.dc.html" aria-label="Log"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></a>
+    <a class="tab active" href="F1-Timeline.dc.html" aria-current="page"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/></svg>Timeline</a>
+  </nav>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

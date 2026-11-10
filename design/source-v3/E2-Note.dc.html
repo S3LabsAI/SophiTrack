@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>E2 Note</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr">
+      <div>
+        <h1>Sophie</h1>
+        <p class="sub">Day 4 · Mon, Nov 2</p>
+      </div>
+      <span class="av"><img class="avatar40" src="/_blob/e9131878e31f23ff777ba3f9b6b4c78e" alt="Sophie's avatar"></span>
+    </header>
+    <section class="card feed">
+      <div class="big">Last feed 1 hr 45 min ago</div>
+      <div class="line2">Next feed about 5:45 to 6:45 PM</div>
+      <span class="btn btn-primary btn-full"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg>Log feed</span>
+    </section>
+  </div>
+
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Note" style="bottom: 291px;">
+    <div class="grab"></div>
+    <div class="sheet-head"><h1>Note</h1><a class="x" href="Main.dc.html" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a></div>
+    <div><button class="chip" type="button" aria-label="Time: now. Change time"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Now</button></div>
+    <textarea class="note-box" aria-label="Note"></textarea>
+    <div class="sheet-save" style="padding-bottom: 12px;"><button class="btn btn-primary btn-full" type="button">Save</button></div>
+  </div>
+
+  <div class="kb" aria-hidden="true">
+    <div class="kb-row"><span>q</span><span>w</span><span>e</span><span>r</span><span>t</span><span>y</span><span>u</span><span>i</span><span>o</span><span>p</span></div>
+    <div class="kb-row"><span>a</span><span>s</span><span>d</span><span>f</span><span>g</span><span>h</span><span>j</span><span>k</span><span>l</span></div>
+    <div class="kb-row"><span class="fn"><svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 4l8 9h-5v7H9v-7H4z"/></svg></span><span>z</span><span>x</span><span>c</span><span>v</span><span>b</span><span>n</span><span>m</span><span class="fn"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 6h12v12H8l-5-6z"/><path d="M12 10l4 4M16 10l-4 4"/></svg></span></div>
+    <div class="kb-row"><span class="fn wide">123</span><span class="sp">space</span><span class="fn wide">return</span></div>
+  </div>
+  <div class="homebar" style="background: #000;"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

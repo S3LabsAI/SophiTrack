@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>C3 Log Feed, left in bottle open</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr">
+      <div>
+        <h1>Sophie</h1>
+        <p class="sub">Day 4 · Mon, Nov 2</p>
+      </div>
+      <span class="av"><img class="avatar40" src="/_blob/e9131878e31f23ff777ba3f9b6b4c78e" alt="Sophie's avatar"></span>
+    </header>
+    <section class="card feed">
+      <div class="big">Last feed 1 hr 45 min ago</div>
+      <div class="line2">Next feed about 5:45 to 6:45 PM</div>
+      <span class="btn btn-primary btn-full"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg>Log feed</span>
+    </section>
+  </div>
+
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Feed">
+    <div class="grab"></div>
+    <div class="sheet-head"><h1>Feed</h1><a class="x" href="Main.dc.html" aria-label="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></a></div>
+    <div><button class="chip" type="button" aria-label="Time: now. Change time"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Now</button></div>
+
+    <div class="field">
+      <span class="q">How much was in the bottle?</span>
+      <div class="stepper">
+        <button type="button" aria-label="5 mL less in the bottle">−</button>
+        <div class="val">60<small>mL</small></div>
+        <button type="button" aria-label="5 mL more in the bottle">+</button>
+      </div>
+      <div class="chips five">
+        <button class="chip" type="button">30</button>
+        <button class="chip" type="button">45</button>
+        <button class="chip on" type="button" aria-pressed="true">60</button>
+        <button class="chip" type="button">75</button>
+        <button class="chip" type="button">90</button>
+      </div>
+    </div>
+
+    <div class="field">
+      <span class="q">Left in bottle <span class="opt">(optional)</span></span>
+      <div class="stepper sm">
+        <button type="button" aria-label="5 mL less left">−</button>
+        <div class="val">10<small>mL</small></div>
+        <button type="button" aria-label="5 mL more left">+</button>
+      </div>
+      <div class="plain">She drank 50 mL</div>
+    </div>
+
+    <button class="collapsed" type="button"><span>Add a note</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+
+    <div class="sheet-save"><button class="btn btn-primary btn-full" type="button">Save · 50 mL</button></div>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

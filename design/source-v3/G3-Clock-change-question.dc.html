@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>G3 Clock-change question</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr"><h1>Timeline</h1></header>
+    <div class="filters"><span class="chip on">All</span><span class="chip">Feeds</span><span class="chip">Diapers</span></div>
+    <div class="clip">
+      <div class="list" style="margin-top: -34px;">
+        <div class="entry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">5:10 PM · Feed</span><span class="d">40 mL</span></span><span class="who">T</span></div>
+        <div class="entry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><span class="tx"><span class="t">1:45 PM · Feed</span><span class="d">35 mL</span></span><span class="who">T</span></div>
+        <div class="entry"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><span class="tx"><span class="t">10:35 AM · Diaper</span><span class="d">Wet</span></span><span class="who h">H</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scrim"></div>
+  <div class="sheet" role="dialog" aria-label="Edit feed">
+    <div class="grab"></div>
+    <div class="sheet-head"><h1>Edit feed</h1><span class="x"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></span></div>
+    <div class="chips">
+      <span class="chip">Sun, Nov 1</span>
+      <span class="chip">1:30 AM</span>
+    </div>
+
+    <div class="field">
+      <span class="q">How much was in the bottle?</span>
+      <div class="stepper">
+        <button type="button" aria-label="5 mL less" tabindex="-1">−</button>
+        <div class="val">40<small>mL</small></div>
+        <button type="button" aria-label="5 mL more" tabindex="-1">+</button>
+      </div>
+      <div class="chips five">
+        <span class="chip">30</span>
+        <span class="chip">45</span>
+        <span class="chip">60</span>
+        <span class="chip">75</span>
+        <span class="chip">90</span>
+      </div>
+    </div>
+
+    <div class="collapsed"><span>Left in bottle <span class="opt">(optional)</span></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></div>
+    <div class="collapsed"><span>Add a note</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></div>
+
+    <div class="sheet-save">
+      <span class="btn btn-quiet btn-full">Delete this entry</span>
+      <span class="btn btn-primary btn-full">Save</span>
+    </div>
+  </div>
+
+  <div class="scrim2"></div>
+  <div class="dialog" role="alertdialog" aria-label="Clock change">
+    <p>Clocks went back an hour that night. Was this before or after?</p>
+    <div class="stack">
+      <button class="btn btn-secondary btn-full" type="button">Before the clocks changed</button>
+      <button class="btn btn-secondary btn-full" type="button">After the clocks changed</button>
+    </div>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

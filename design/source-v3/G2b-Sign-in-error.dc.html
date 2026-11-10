@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>G2b Sign-in, error</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen" style="padding: 0 24px 34px; gap: 16px;">
+    <div class="center" style="gap: 14px; padding: 56px 0 28px;">
+      <img src="/_blob/1d644aa426e2cac829936238a112079b" alt="" style="width: 120px; height: 102px; object-fit: contain;">
+      <img src="/_blob/cb73c421a4d22c89e20d1ee2be2b1636" alt="SophiTrack" style="width: 170px; height: 33px; object-fit: contain;">
+    </div>
+
+    <div class="input">
+      <label for="g2b-email">Email</label>
+      <input id="g2b-email" type="email" autocomplete="username" value="heidi@example.com">
+    </div>
+    <div class="input">
+      <label for="g2b-password">Password</label>
+      <input id="g2b-password" type="password" autocomplete="current-password" value="12345678" aria-describedby="g2b-error">
+      <div class="plain" id="g2b-error" role="alert">That email or password didn't work. Try again.</div>
+    </div>
+    <button class="btn btn-primary btn-full" type="button" style="margin-top: 8px;">Sign in</button>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

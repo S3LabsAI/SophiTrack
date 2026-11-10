@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>B1 Plus menu</title>
+<script src="./support.js"></script>
+<link rel="stylesheet" href="sophi.css">
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+<div class="phone">
+  <div class="island"></div>
+  <div class="safe-top"></div>
+  <div class="screen">
+    <header class="hdr">
+      <div>
+        <h1>Sophie</h1>
+        <p class="sub">Day 4 · Mon, Nov 2</p>
+      </div>
+      <span class="av"><img class="avatar40" src="/_blob/e9131878e31f23ff777ba3f9b6b4c78e" alt="Sophie's avatar"></span>
+    </header>
+
+    <section class="card feed">
+      <div class="big">Last feed 1 hr 45 min ago</div>
+      <div class="line2">Next feed about 5:45 to 6:45 PM</div>
+      <span class="btn btn-primary btn-full"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg>Log feed</span>
+    </section>
+
+    <section class="card">
+      <h2>Today so far</h2>
+      <div class="stats">
+        <div class="stat"><span class="k">Feeds <span>6 of 8</span></span><span class="status st-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>On track</span></div>
+        <div class="stat"><span class="k">Wet diapers <span>3 of 4</span></span><span class="status st-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>On track</span></div>
+        <div class="stat"><span class="k">Dirty diapers <span>2 of 2</span></span><span class="status st-ok"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 12.5l2.5 2.5 4.5-5"/></svg>On track</span></div>
+      </div>
+    </section>
+
+    <section class="card rows">
+      <div class="item"><div class="kv"><span class="k">Formula today</span><span class="v">330 mL</span></div></div>
+      <div class="item"><div class="kv"><span class="k">Last diaper</span><span class="v">3:45 PM · wet and dirty · Tom</span></div></div>
+      <div class="item"><div class="kv"><span class="k">Weight</span><span class="v">6 lb 4 oz · Nov 1</span></div><div class="small"><span class="nb">5 oz under birth weight (5%)</span> · <span class="nb">Goal: back by Day 14 (Nov 12)</span></div></div>
+    </section>
+  </div>
+
+  <a class="scrim" href="Main.dc.html" aria-label="Close"></a>
+  <div class="sheet" role="dialog" aria-label="Log" style="padding-bottom: 34px;">
+    <div class="grab" style="margin-bottom: 4px;"></div>
+    <div class="two">
+      <a class="tile" href="C1-Log-Feed.dc.html"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3h4v3h-4z"/><path d="M9 6h6l1 3v11a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V9z"/><path d="M8 13h8"/></svg></span><b>Feed</b><span class="s">Last 3:45 PM · 60 mL</span></a>
+      <a class="tile" href="D1-Log-Diaper.dc.html"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18v4a9 9 0 0 1-18 0z"/><path d="M9 16h6"/></svg></span><b>Diaper</b><span class="s">Last 3:45 PM<br>wet and dirty</span></a>
+    </div>
+    <div class="two">
+      <a class="mini" href="E1-Log-Weight.dc.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8.5 9.5a5 5 0 0 1 7 0M12 9v2.5"/></svg>Weight</a>
+      <a class="mini" href="E2-Note.dc.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h9l4 4v14H6z"/><path d="M9 12h7M9 16h7M9 8h3"/></svg>Note</a>
+    </div>
+  </div>
+  <div class="homebar"></div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":393,"height":852}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
