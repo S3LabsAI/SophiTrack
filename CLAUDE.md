@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project status
 
-SophiTrack is a private newborn tracker PWA (iPhone-first, plus iPad nursery display and desktop) for two parents, Tom & Heidi, tracking their daughter Sophie. Built milestone by milestone per `SophiTrack-Build-Plan.md`; M0 (setup) is done, so the app is currently a placeholder shell.
+SophiTrack is a private newborn tracker PWA (iPhone-first, plus iPad nursery display and desktop) for two parents, Tom & Heidi, tracking their daughter Sophie. Built milestone by milestone per `SophiTrack-Build-Plan.md`; M0 (setup) and M1 (domain core) are done: `src/domain/` holds the tested time, day-of-life, feed, totals, status and weight rules, and the UI is still a placeholder shell.
 
 As of 11/9/2026 feeding is **formula only**: there is no pumping, breast milk or breastfeeding tracking anywhere in the app. The MVP is two actions (Feed, Diaper) and two screens (Today, Timeline), with Weight and Note as small extras in the + menu. The tab bar is Today, +, Timeline.
 
@@ -13,7 +13,7 @@ As of 11/9/2026 feeding is **formula only**: there is no pumping, breast milk or
 ```bash
 npm run dev            # Vite dev server
 npm run build          # typecheck (tsc -b) + production build to dist/
-npm run check          # typecheck + oxlint + prettier --check + unit tests: run before committing
+npm run check          # typecheck + oxlint + prettier --check + unit tests (twice: default zone, then TZ=Asia/Tokyo): run before committing
 npm test               # Vitest, once (src/**/*.test.ts[x])
 npx vitest run src/domain/time.test.ts      # one test file
 npx vitest run -t "fall back"               # tests whose name matches

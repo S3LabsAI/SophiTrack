@@ -133,7 +133,7 @@ public/        icons and splash from design/brand/
 
 **Done when** an empty app deploys to the Vercel URL and `npm test` runs. Both are true.
 
-### 5.2 M1 · Domain core, test-first (Tue 11/10, morning)
+### 5.2 M1 · Domain core, test-first (Tue 11/10, morning) ✅ done 11/9
 - `time.ts`: convert an instant to Central time; format as "3:45 PM", adding CDT/CST only inside the repeated hour; `resolveLocal(date, time)` returns `ok` / `ambiguous` (2 instants) / `gap` (0 instants); UTC offset at an instant
 - `dayOfLife.ts`: Central date minus `day1_date` + 1, with the birth hour on 10/29 counted as Day 1; `dayLength(date)` returns 23, 24 or 25 hours
 - `feed.ts`: what she drank = amount minus leftover, never below zero. A paper feed with no amount adds 0 mL

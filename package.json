@@ -17,12 +17,14 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "e2e": "playwright test",
-    "check": "npm run typecheck && npm run lint && npm run format:check && npm test"
+    "check": "npm run typecheck && npm run lint && npm run format:check && npm test && npm run test:tz",
+    "test:tz": "TZ=Asia/Tokyo vitest run"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.119.0",
     "react": "^19.3.1",
-    "react-dom": "^19.3.1"
+    "react-dom": "^19.3.1",
+    "temporal-polyfill": "^1.0.8"
   },
   "devDependencies": {
     "@playwright/test": "^1.65.0",
